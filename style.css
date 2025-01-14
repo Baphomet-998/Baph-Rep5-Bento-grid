@@ -1,0 +1,201 @@
+/* // GENERAL SETTINGS // */
+@font-face {
+    font-family: DM sans;
+    src: url(/bento-grid-main/assets/fonts/DMSans-VariableFont_opsz,wght.ttf);
+}
+:root{
+    --LightPurple: hsl(254, 88%, 90%);
+    --Purple : hsl(256, 66%, 58%);
+    --Beige : hsl(31, 66%, 93%);
+    --Yellow : hsl(39, 100%, 71%);
+
+    --textFont: 'DM sans';
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* // BODY STYLE -- MOBILE APPROACH // */
+body{
+    display: flex;
+    justify-content: center;
+    font-family: var(--textFont), sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+main{
+    display: grid;
+    row-gap: 20px;
+    width: 250px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+/* // GRIDBOXES STYLES // */
+.gridBoxes{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.gridBoxes_heading{
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: -1px;
+}
+.gridBoxes_heading--fontsize{
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: -1px;
+}
+/* /// GRIDBOXES SPECIFIC STYLES /// */
+/* //// GRIDBOX 1 //// */
+#gridBox1{
+    align-items: center;
+    background-color: var(--Purple);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+#gridBox1 p:first-child{
+    line-height: 1;
+    font-size: 1.8em;
+    font-weight: 550; 
+    margin-bottom: .8rem;
+}
+#gridBox1 p span:first-child{
+    color: var(--Yellow);
+}
+#gridBox1 p span:last-child{
+    font-style: italic;
+}
+#gridBox1 img{
+    width: 140px;
+    margin-bottom: 0.3rem;
+}
+#gridBox1 p:last-child{
+    font-size: 0.7em;
+    opacity: 0.8;
+}
+/* //// GRIDBOX 2 //// */
+#gridBox2{
+    background-color: white;
+    padding: 0.6rem;
+}
+#gridBox2 img{
+    width: 225px;
+    margin-bottom: 0.3rem;
+}
+#gridBox2 p{
+    line-height: 1;
+    color: hsla(0, 0%, 0%, 0.7);
+}
+/* //// GRIDBOX 3 //// */
+#gridBox3{
+    align-items: start;
+    background-color: var(--Yellow);
+    padding: 0.8rem 0.8rem 0 0.8rem;
+    height: 160px;
+    overflow: hidden;
+}
+#gridBox3 p{
+    line-height: 1;
+    color: hsla(0, 0%, 0%, 0.7);
+    margin-bottom: 0.6rem;
+}
+#gridBox3 img{
+    width: 150px;
+}
+/* //// GRIDBOX 4 //// */
+#gridBox4 {
+    text-align: center;
+    align-items: center;
+    background-color: var(--LightPurple);
+    padding: 1.3rem 0.8rem;
+}
+#gridBox4 p:first-child{
+    color: hsla(0, 0%, 0%, 0.7);
+}
+#gridBox4 img{
+    width: 100%;
+    margin: 0.8rem 0;
+}
+#gridBox4 p:last-child{
+    font-size: 0.75em;
+    opacity: 0.8;
+    font-weight: 450;
+    line-height: 1;
+}
+/* //// GRIDBOX 5 //// */
+#gridBox5{
+    background-color: var(--Purple);
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 1rem 1.6rem;
+}
+#gridBox5 img{
+    width: 170px;
+    margin-bottom: 2rem;
+}
+#gridBox5 p{
+    font-weight: 500;
+    line-height: 1;
+    font-size: 1.5em;
+}
+/* //// GRIDBOX 6 //// */
+#gridBox6{
+    background-color: white;
+    padding: 1.1rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+#gridBox6 p:first-child{
+    font-weight: 550;
+    font-size: 2.2em;
+}
+#gridBox6 p{
+    font-size: 0.7em;
+    font-weight: 450;
+}
+#gridBox6 img{
+    width: 130px;
+    margin-top: 0.8rem;
+}
+/* //// GRIDBOX 7 //// */
+#gridBox7{
+    background-color: var(--Beige);
+    padding: 1.2rem;
+}
+#gridBox7 p{
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.4em;
+    color: hsla(0, 0%, 0%, 0.8);
+}
+#gridBox7 span{
+    font-style: italic;
+    color: hsla(256, 66%, 58%, 0.8);
+}
+#gridBox7 img{
+    margin-top: 1rem;
+    width: 140px;
+}
+/* //// GRIDBOX 8 //// */
+#gridBox8{
+    background-color: var(--Yellow);
+    padding: 1.2rem;
+}
+#gridBox8 p{
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5em;
+    color: hsla(0, 0%, 0%, 0.7);
+    margin-bottom: 1rem;
+}
+#gridBox8 img{
+    width: 170px;
+}
+footer{
+    display: none;
+}

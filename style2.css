@@ -1,0 +1,123 @@
+/* / BENTO GRID LARGE SCREENS MEDIA QUERIES / */
+@media only screen and (width >= 1024px) {
+    body{
+        align-items: center;
+    }
+    /* ITS ALL IN THE NUMBERS/SIZE OF ROWS AND TEMPLATES AREAS' LAYOUT */
+   main{
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 180px 30px 95px 150px;
+    grid-template-areas: 'box7 box1 box1 box4'
+                         'box7 box2 box3 box4'
+                         'box8 box2 box3 box4'
+                         'box8 box6 box5 box5';
+    gap: 15px;
+    width: 55%;
+    margin: 0;
+   }
+/* //// GRIDBOX 1 //// */
+   #gridBox1{
+    grid-area: box1;
+   }
+/* //// GRIDBOX 2 //// */
+   #gridBox2{
+    grid-area: box2;
+   }
+   #gridBox2 img{
+      width: 180px;
+   }
+/* //// GRIDBOX 3 //// */
+   #gridBox3{
+    grid-area: box3;
+    height: auto;
+   }
+   #gridBox3 img{
+      width: 100%;
+   }
+   #gridBox3 p{
+      font-weight: 550;
+      letter-spacing: -1.5px;
+   }
+/* //// GRIDBOX 4 //// */
+   #gridBox4{
+    grid-area: box4;
+    text-align: start;
+    padding-right: 0;
+    width: auto;
+    align-items: center;
+   }
+   #gridBox4 p:first-child{
+      line-height: 1;
+   }
+  #gridBox4 img{
+      width: auto;
+      height: 180px;
+      margin: auto;
+   }
+   #gridBox4 p:last-child{
+      font-size: 0.6em;
+   }
+/* //// GRIDBOX 5 //// */
+   #gridBox5{
+    grid-area: box5;
+    flex-direction: row;
+    padding: 1em;
+    height: auto;
+    text-align: start;
+   }
+   #gridBox5 img{
+    width: 120px;
+    margin: 0;
+
+   }
+   #gridBox5 p{
+      font-size: 1.2em;
+      margin-left: 1rem;
+   }
+/* //// GRIDBOX 6 //// */
+   #gridBox6{
+    grid-area: box6;
+    height: auto;
+    padding: 0.5rem;
+   }
+   #gridBox6 p:first-child{
+      font-weight: 500;
+      font-size: 2em;
+  }
+   #gridBox6 p{
+      font-size: 0.55em;
+   }
+   #gridBox6 img{
+      width: 80%;
+      margin-top: 1.3rem;
+   }
+/* //// GRIDBOX 7 //// */
+   #gridBox7{
+    grid-area: box7;
+    align-items: center;
+    padding: 2rem 1rem;
+   }
+   #gridBox7 p{
+    font-weight: 500;
+    letter-spacing: -2.5px;
+   }
+   #gridBox7 img{
+    width: 100%;
+   }
+/* //// GRIDBOX 8 //// */
+   #gridBox8{
+    grid-area: box8;
+    padding: 1rem;
+   }
+   #gridBox8 p{
+      font-size: 1.3em;
+      font-weight: 500;
+      letter-spacing: -2.5px;
+   }
+   #gridBox8 img{
+      width: 100%;
+      margin-top: 0.8rem;
+   }
+
+}
